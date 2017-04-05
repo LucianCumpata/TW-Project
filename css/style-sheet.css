@@ -1,0 +1,126 @@
+/* style-ul pentru bara de navigare si butoanele de login si register(andreea)*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #4d4d4d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    color: #54dbff;
+}
+
+li a:hover.button{
+    color: white;
+    background-color: #29a0a2;
+}
+
+a:hover.button{
+    color: white;
+    background-color: #29a0a2;
+}
+
+.active{
+    color: #4CAF50;
+}
+
+.button{
+    background-color: red;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Arial";
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button.big{
+    font-size: 16px;
+    padding: 14px 50px;
+}
+
+#header {
+    background: #fff;
+    color: #555f66;
+    cursor: default;
+    height: 3em;
+    left: 0;
+    line-height: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+#header nav > ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#header nav > ul > li {
+    border-radius: 6px;
+    display: inline-block;
+    margin-left: 2em;
+    padding-left: 0;
+}
+
+#header nav > ul > li a {
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    color: #555f66;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#header nav > ul > li a:hover.button {
+    color: white;
+}
+
+#header nav > ul > li a.button {
+    color: white;
+}
+
+#header nav > ul > li a:hover:not(.button) {
+    color: #54dbff;
+}
+
+#header nav > ul > li:first-child {
+    margin-left: 0;
+}
+
+#header h1 {
+    color: #666f77;
+    font-weight: 500;
+    height: inherit;
+    left: 1.25em;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
