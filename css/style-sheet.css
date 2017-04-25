@@ -226,3 +226,235 @@ body {
     background-color:#72828e;
 }
 
+
+/* Prima sectiune a paginii Home */
+#first-section{
+    background-color: #666666;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #d8d8d8;
+    padding: 14em 0;
+    text-align: center;
+    position: relative;
+}
+
+/* A doua sectiune a paginii Home */
+#second-section{
+    background-color: #29a0a2;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #938d92;
+    padding: 14em 0;
+    text-align: center;
+    position: relative;
+}
+
+#first-section .inner {
+    position: relative;
+    z-index: 1;
+}
+#first-section .inner :last-child {
+    margin-bottom: 0;
+}
+
+#first-section h2 {
+    font-size: 3.5em;
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+
+ul.actions {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.actions li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+    vertical-align: middle;
+}
+
+ul.actions li:last-child {
+    padding-right: 0;
+}
+
+ul.actions.small li {
+    padding: 0 0.5em 0 0;
+}
+
+ul.actions.vertical li {
+    display: block;
+    padding: 1em 0 0 0;
+}
+
+ul.actions.vertical li:first-child {
+    padding-top: 0;
+}
+
+ul.actions.vertical li > * {
+    margin-bottom: 0;
+}
+
+ul.actions.vertical.small li {
+    padding: 0.5em 0 0 0;
+}
+
+ul.actions.vertical.small li:first-child {
+    padding-top: 0;
+}
+
+ul.actions.fit {
+    display: table;
+    margin-left: -1em;
+    padding: 0;
+    table-layout: fixed;
+    width: calc(100% + 1em);
+}
+
+ul.actions.fit li {
+    display: table-cell;
+    padding: 0 0 0 1em;
+}
+
+ul.actions.fit li > * {
+    margin-bottom: 0;
+}
+
+ul.actions.fit.small {
+    margin-left: -0.5em;
+    width: calc(100% + 0.5em);
+}
+
+ul.actions.fit.small li {
+    padding: 0 0 0 0.5em;
+}
+
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.icon > .label {
+    display: none;
+}
+
+.icon.major {
+    display: inline-block;
+    margin: 0 0 10% 0;
+    margin-top:10%;
+    color: red;
+    background: #629DD1;
+    width: 3em;
+    height: 3em;
+    font-size: 2em;
+    text-align: center;
+    line-height: 3em;
+    border-radius: 100%;
+    box-shadow: 0 0 0 10px #fff, 0 0 0 11px rgba(144, 144, 144, 0.25);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon.simplestatistics {
+    background-image: url(../images/statistics.png);
+}
+
+.icon.simplerefresh{
+    background-image: url(../images/refresh.png);
+}
+
+.icon.simplecog{
+    background-image: url(../images/cog.png);
+}
+
+.wrapper {
+    padding: 6em 0 4em 0;
+}
+
+.wrapper.style1 {
+    background: #fff;
+    color: #555f66;
+}
+
+
+#left{
+    width: 300px;
+    height: 400px;
+    background-color: #f7f0f6;
+    overflow: hidden;
+    margin-top:-50%;
+    margin-left: -150%;
+    border-radius:12%;
+
+}
+
+#middle{
+    width: 300px;
+    height: 400px;
+    background-color: #f7f0f6;
+    overflow: hidden;
+    margin-top: -132%;
+    margin-left: 0%;
+    border-radius:12%;
+
+}
+
+#right{
+    width: 300px;
+    height: 400px;
+    background-color: #f7f0f6;
+    overflow: hidden;
+    margin-top:-132%;
+    margin-left: 150%;
+    border-radius:12%;
+
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.container .info {
+    margin: 50px auto;
+    text-align: center;
+}
+.container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+.container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+.container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+.container .info span .fa {
+    color: #EF3B3A;
+}
