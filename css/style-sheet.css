@@ -458,3 +458,102 @@ ul.actions.fit.small li {
 .container .info span .fa {
     color: #EF3B3A;
 }
+
+/* A treia sectiune a paginii Home */
+#third-section{
+    background-color: #666666;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #938d92;
+    padding: 14em 0;
+    text-align: center;
+    position: relative;
+}
+
+.left-pos1{
+    margin-top:-50%;
+    margin-left: -220%;
+
+}
+
+.left-pos2{
+    margin-top:30%;
+    margin-left: -220%;
+
+
+}
+
+.left-pos3{
+    margin-top:15%;
+    margin-left: -220%;
+}
+
+.size-pos{
+    height: 40%;
+    width: 40%;
+}
+
+
+#text-pos1{
+    width: 600px;
+    height: 200px;
+    background-color:#8f93ba;
+    overflow: hidden;
+    margin-top:-80%;
+    margin-left:50%;
+    border-radius:15%;
+    border:1px solid #7278af;
+
+}
+
+#text-pos2{
+    width: 600px;
+    height: 200px;
+    background-color:#8f93ba;
+    overflow: hidden;
+    margin-top:-70%;
+    margin-left:50%;
+    border-radius:15%;
+    border-radius:15%;
+    border:1px solid #7278af;
+
+
+}
+
+#text-pos3{
+    width: 600px;
+    height: 200px;
+    background-color:#8f93ba;
+    overflow: hidden;
+    margin-top:-70%;
+    margin-left:50%;
+    border-radius:15%;
+    border-radius:15%;
+    border:1px solid #7278af;
+
+}
+.text-style{
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer{
+    background:#c9cfd8;
+    padding: 80px 0 80px 0;
+}
+
+.copyright {
+    font: 15px 'Montserrat', sans-serif;
+    color:#3f4349;
+    text-align:center;
+
+}
+
+#footer-icon2{
+    width:50px;
+    height:50px;
+    margin-left:48%;
+}
