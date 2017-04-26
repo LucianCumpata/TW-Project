@@ -708,6 +708,95 @@ h1_form{
     border:1px solid #2afdff;
 }
 
+/*Codul de mai jos e folosit la crearea unui nou chestionar */
+.title_description {
+    margin-top: 55px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 55px;
+    background-color: transparent;
+
+}
+
+#q_title {
+    width: 540px;
+    height: 50px;
+    font-size: large;
+}
+#q_description {
+    width: 150px;
+    height: 100px;
+    font-size: medium;
+}
+
+#q_tags {
+    width: 550px;
+    height: 50px;
+    font-size: medium;
+}
+
+.q_button {
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+}
+
+.q_button.plus{
+    background-image: url("../images/plus-sign.png");
+}
+
+.q_button.questionmrk{
+    background-image: url("../images/question mark.png");
+}
+
+.q_button.questionrbtn{
+    background-image: url("../images/question rbuttons.png");
+}
+
+.q_button.numbersrbtn{
+    background-image: url("../images/numbers rbuttons.png");
+}
+
+.q_button.questioncbtn{
+    background-image: url("../images/question cbuttons.png");
+}
+
+#finish{
+    position: relative;
+    padding-left: 66%;
+}
+
+#adding_questions{
+    margin-top: 110px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 110px;
+    background-color: transparent;
+
+}
+
+.q_question{
+    width: 300px;
+    height: 30px;
+    font-size: medium;
+}
+
+.q_question.simple{
+
+}
+
+.q_question.radio{
+
+}
+
+.q_question.checkbox{
+
+}
+
+.q_question.numbers{
+
+}
+
 /*finished form */
 #social_sharing_facebook{
     width: 45px;

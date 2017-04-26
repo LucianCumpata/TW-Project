@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style-sheet.css">
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+
+<header id="header">
+    <nav id="nav">
+        <ul>
+            <li> <a href="login.html" class="button"> Logout </a> </li>
+            <li><a href="contact_us.html"> Contact us </a>  </li>
+            <li><a href="settings.html"> Settings </a>  </li>
+            <li><a href="my_questionnaires.html"> My questionnaires </a>  </li>
+            <li><a href="profile.html">My profile</a> </li>
+            <h1> <a href="profile.html"> <img src="images/logo40x40.png"> </a></h1>
+        </ul>
+    </nav>
+</header>
+
+<div class="title_description">
+<form action=" ">
+    <br>
+    <h3>Title:</h3>
+    <input id="q_title" type="text" name="title1" value="Title">
+    <br>
+    <h3>Description:</h3>
+    <textarea rows="3" cols="10"></textarea>
+    <br>
+    <h3>Tags:</h3>
+    <input id="q_tags" type="text" name="tags" value="Insert tags here">
+    <br><br>
+    <button class="q_button plus" type="button"> </button>
+    <button class="q_button questionmrk" type="button"> </button>
+    <button class="q_button questionrbtn" type="button"> </button>
+    <button class="q_button numbersrbtn" type="button"> </button>
+    <button class="q_button questioncbtn" type="button"> </button>
+</form>
+</div>
+
+<div id="adding_questions">
+    <img src="images/question%20mark.png"> <br>
+    <input class="q_question simple" type="text" name="simplequestion" value="Question"> <br>
+    <br>
+    <img src="images/question%20rbuttons.png"> <br>
+    <input class="q_question radio" type="text" name="radioquestion" value="Question"> <br>
+    <br>
+    <input class="q_question radio" type="text" name="answer1" value="Answer 1"> <br>
+    <input class="q_question radio" type="text" name="answer2" value="Answer 2"> <br>
+    <input class="q_question radio" type="text" name="answer3" value="Answer 3"> <br>
+    <input type="submit" value="Add"> <br>
+    <br>
+    <img src="images/question%20cbuttons.png"> <br>
+    <input class="q_question checkbox" type="text" name="checkboxquestion" value="Question"><br>
+    <br>
+    <input class="q_question checkbox" type="text" name="answer1" value="Answer 1"> <br>
+    <input class="q_question checkbox" type="text" name="answer2" value="Answer 2"> <br>
+    <input class="q_question checkbox" type="text" name="answer3" value="Answer 3"> <br>
+    <input type="submit" value="Add"> <br>
+    <br>
+    <img src="images/numbers%20rbuttons.png"> <br>
+    <input class="q_question numbers" type="text" name="numbersquestion" value="Question"><br>
+    <br>
+    <input class="q_question rbuttons" type="text" name="range" value="Rating range"> <br>
+    <input class="q_question rbuttons" type="text" name="item1" value="Item 1"> <br>
+    <input class="q_question rbuttons" type="text" name="item2" value="Item 2"> <br>
+    <input class="q_question rbuttons" type="text" name="item3" value="Item 3"> <br>
+    <input type="submit" value="Add">
+</div>
+
+<div id="finish">
+<a href="generic_finished_form.html" class="button">Finish</a>
+</div>
+
+<footer id="footer">
+    <a href="https://github.com/LucianCumpata/TW-Project">
+        <img id="footer-icon2" src="images/github-icon.png" >
+    </a>
+    <p class="copyright">  CodingCatz 2017 <br><a href="license.html">License terms</a>
+    </p>
+</footer>
+</body>
+</html>
