@@ -857,3 +857,26 @@ h1_form{
     padding-bottom: 1%;
     border: #fbfbfb solid 1px ;
 }
+
+/*generic form detail*/
+
+#q_details{
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+/*my questionary*/
+
+#questionnaire_list{
+    font-family: Roboto;
+    margin-top: 10%;
+    margin-left: 25%;
+    font-size: medium;
+    border: 2px solid cornflowerblue;
+    padding: 4%;
+
+}
+
+.questionnaire_list_items{
+    padding-right: 100px;
+}
