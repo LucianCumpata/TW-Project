@@ -557,3 +557,151 @@ ul.actions.fit.small li {
     height:50px;
     margin-left:48%;
 }
+/* stilul pentru pagina de contact us*/
+#form-div {
+    background-color:rgba(72,72,72,0.4);
+    padding-left:3%;
+    padding-right: 3%;
+    padding-top:5%;
+    padding-bottom:2%;
+    width: 450px;
+    float: left;
+    left: 50%;
+    position: relative;
+    margin-top:30px;
+    margin-left: -260px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+    color:#3c3c3c;
+    font-family: "Roboto", sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #3498db;
+    color: #3498db;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+.focused{
+    color:#30aed6;
+    border:#30aed6 solid 3px;
+}
+
+/* Contact Us Icons ---------------------------------- */
+#name{
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 25px 25px;
+    background-position: 450px 8px;
+    background-repeat: no-repeat;
+
+}
+
+#name:focus{
+    background-image:none;
+}
+
+#email{
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 450px 8px;
+    background-repeat: no-repeat;
+}
+
+#email:focus{
+    background-image: none;
+}
+
+#comment{
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 30px 30px;
+    background-position: 450px 8px;
+    background-repeat: no-repeat;
+}
+#comment:focus {
+    background-image: none;
+}
+
+#button-blue{
+    font-family: "Roboto", sans-serif;
+    float: none;
+    width: 20%;
+    border: #fbfbfb solid 3px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color:#238DA2;
+    color:white;
+    font-size:13px;
+    padding-top:3%;
+    padding-bottom:3%;
+    margin-top:-2px;
+    font-weight: 500;
+}
+
+#button-blue:hover{
+    background-color: #3f4349;
+
+}
+
+#div_form{
+    background-color:rgba(72,72,72,0.4);
+    padding-left:3%;
+    padding-right: 3%;
+    padding-top:5%;
+    padding-bottom:2%;
+    width: 700px;
+    height:700px;
+    float: left;
+    left: 50%;
+    position: relative;
+    margin-top:30px;
+    margin-left: -400px;
+}
+
+#box_form{
+    background-color: white;
+    padding-left:3%;
+    padding-right: 3%;
+    padding-top:2%;
+    padding-bottom:3%;
+    width: 500px;
+    height:600px;
+    float: left;
+    left: 50%;
+    position: relative;
+    margin-top:30px;
+    margin-left: -270px;
+    text-align:left;
+}
+h1_form{
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+}
+.input_form{
+    width:500px;
+    height:50px;
+    border:1px solid #2afdff;
+}
+.textarea_form{
+    width:500px;
+    height:150px;
+    border:1px solid #2afdff;
+}
