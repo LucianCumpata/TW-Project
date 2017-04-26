@@ -707,3 +707,15 @@ h1_form{
     height:150px;
     border:1px solid #2afdff;
 }
+
+/*finished form */
+#social_sharing_facebook{
+    width: 45px;
+    height: 45px;
+}
+
+#social_sharing_twitter{
+    padding-bottom: 6px;
+    width: 35px;
+    height: 35px;
+}
