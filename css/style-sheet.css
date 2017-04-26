@@ -642,7 +642,7 @@ ul.actions.fit.small li {
     background-image: none;
 }
 
-#button-blue{
+.button-blue{
     font-family: "Roboto", sans-serif;
     float: none;
     width: 20%;
@@ -658,7 +658,7 @@ ul.actions.fit.small li {
     font-weight: 500;
 }
 
-#button-blue:hover{
+.button-blue:hover{
     background-color: #3f4349;
 
 }
