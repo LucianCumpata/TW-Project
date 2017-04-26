@@ -719,3 +719,52 @@ h1_form{
     width: 35px;
     height: 35px;
 }
+/*stilul pentru setings*/
+
+#change_pass{
+    background-color: transparent;
+    width: 400px;
+    height:400px;
+    float: left;
+    left: 0%;
+    position: absolute;
+    margin-top:5%;
+    margin-left: 80px;
+    text-align:left;
+}
+
+#change_email{
+    background-color: transparent;
+    width: 400px;
+    height:400px;
+    float: none;
+    left: 60%;
+    position: absolute;
+    margin-top:5%;
+    margin-left:-200px;
+    text-align:left;
+}
+
+#account_info{
+    background-color: transparent;
+    width: 300px;
+    height:400px;
+    float: right;
+    right:0%;
+    position: absolute;
+    margin-top:5%;
+    margin-right:0px;
+    text-align:left;
+}
+
+.input_form.small{
+    width: 250px;
+    height: 25px;
+
+}
+.button-blue.small{
+    width: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: #fbfbfb solid 1px ;
+}
