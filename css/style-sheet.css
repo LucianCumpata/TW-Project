@@ -247,7 +247,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     color: #938d92;
-    padding: 14em 0;
+    padding: 23% 0;
     text-align: center;
     position: relative;
 }
@@ -398,8 +398,9 @@ ul.actions.fit.small li {
     width: 300px;
     height: 400px;
     background-color: #f7f0f6;
+    position: absolute;
     overflow: hidden;
-    margin-top:-50%;
+    margin-top:-66%;
     margin-left: -150%;
     border-radius:12%;
 
@@ -409,8 +410,9 @@ ul.actions.fit.small li {
     width: 300px;
     height: 400px;
     background-color: #f7f0f6;
+    position: absolute;
     overflow: hidden;
-    margin-top: -132%;
+    margin-top: -66%;
     margin-left: 0%;
     border-radius:12%;
 
@@ -420,10 +422,12 @@ ul.actions.fit.small li {
     width: 300px;
     height: 400px;
     background-color: #f7f0f6;
+    position: absolute;
     overflow: hidden;
-    margin-top:-132%;
+    margin-top:-66%;
     margin-left: 150%;
     border-radius:12%;
+
 
 }
 
