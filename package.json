@@ -4,7 +4,7 @@
   "description": "Assignment project name:Anonymous Feedback Tool",
   "main": "app.js",
   "scripts": {
-    "start":"node app.js",
+    "start": "node server_app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/LucianCumpata/TW-Project/issues"
   },
-  "homepage": "https://github.com/LucianCumpata/TW-Project#readme"
+  "homepage": "https://github.com/LucianCumpata/TW-Project#readme",
+  "dependencies": {
+    "mongoose": "^4.9.7"
+  }
 }
