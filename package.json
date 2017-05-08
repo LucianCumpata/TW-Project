@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/LucianCumpata/TW-Project#readme",
   "dependencies": {
-    "mongoose": "^4.9.7"
+    "mongoose": "^4.9.8"
   }
 }
