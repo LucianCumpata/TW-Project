@@ -1,5 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 /* Style-ul pentru bara de navigare si butoanele de login si register(Andreea)*/
+.site-logo {
+    transition: 1s ease;
+}
+.site-logo:hover {
+    border: 1px solid #f00;
+    border-radius: 50%;
+    transition: 1s ease;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -9,7 +18,6 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-
 }
 
 li {
@@ -124,6 +132,7 @@ a:hover.button{
     padding: 0;
     position: absolute;
     top: 0;
+    margin-top:2px;
 }
 
 /* (Luci)
@@ -239,7 +248,18 @@ body {
     text-align: center;
     position: relative;
 }
-
+.inner:after{
+   width: 100%;
+   height: 300%;
+   top: -85%;
+   left: 0;
+   position: absolute;
+   z-index: -1;
+   content: "";
+   background: url(../images/suggestion_box.jpg);
+   background-size: cover;
+   opacity: 0.1;
+}
 /* A doua sectiune a paginii Home */
 #second-section{
     background-color: #29a0a2;
@@ -374,14 +394,35 @@ ul.actions.fit.small li {
 
 .icon.simplestatistics {
     background-image: url(../images/statistics.png);
+    transition: 0.5s ease;
+}
+
+.icon.simplestatistics:hover{
+    transform: rotateY(180deg);
+    box-shadow: 0 0 0 10px #DADFF7, 0 0 0 11px rgba(144, 144, 144, 0.25); /* #29a265 */
+    transition: 1s ease;
 }
 
 .icon.simplerefresh{
     background-image: url(../images/refresh.png);
+    transition: 0.5s ease;
+}
+.icon.simplerefresh:hover{
+    transform: rotateZ(80deg);
+    box-shadow: 0 0 0 10px #29A0A2, 0 0 0 11px rgba(144, 144, 144, 0.25); /* #ffe149 */
+    transition: 1s ease-in-out;
+
 }
 
 .icon.simplecog{
     background-image: url(../images/cog.png);
+    transition: 0.5s ease
+}
+
+.icon.simplecog:hover{
+    transform: rotateZ(180deg);
+    box-shadow: 0 0 0 10px #232C33, 0 0 0 11px rgba(144, 144, 144, 0.25); /* #f77a20 */
+    transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); /*out quadratic @ Chrome*/
 }
 
 .wrapper {
@@ -472,22 +513,23 @@ ul.actions.fit.small li {
     background-position: center center;
     background-repeat: no-repeat;
     color: #938d92;
-    padding: 14em 0;
+    padding-top:3em;
     text-align: center;
     position: relative;
+}
+
+.left-pos{
+    margin-left: -220%;
 }
 
 .left-pos1{
     margin-top:-50%;
     margin-left: -220%;
-
 }
 
 .left-pos2{
     margin-top:30%;
     margin-left: -220%;
-
-
 }
 
 .left-pos3{
@@ -499,7 +541,42 @@ ul.actions.fit.small li {
     height: 40%;
     width: 40%;
 }
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
 
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.container-col12 {
+    width: 100%;
+    padding-bottom: 10em;
+}
+
+/*last container will not leave blank space*/
+.container-col12:last-of-type {
+    padding-bottom: 5em;
+}
+
+.feature-img {
+
+}
+
+.feature-description {
+    width: 600px;
+    height: 10.5em; /*200px*/
+    background-color:#8f93ba;
+    overflow: hidden;
+    
+    margin-left:50%;
+    margin-top: -100%;
+    padding: 0.5em;
+
+    border-radius:15%;
+    border:1px solid #7278af;
+}
 
 #text-pos1{
     width: 600px;
@@ -510,7 +587,6 @@ ul.actions.fit.small li {
     margin-left:50%;
     border-radius:15%;
     border:1px solid #7278af;
-
 }
 
 #text-pos2{
@@ -521,10 +597,7 @@ ul.actions.fit.small li {
     margin-top:-70%;
     margin-left:50%;
     border-radius:15%;
-    border-radius:15%;
     border:1px solid #7278af;
-
-
 }
 
 #text-pos3{
@@ -535,27 +608,28 @@ ul.actions.fit.small li {
     margin-top:-70%;
     margin-left:50%;
     border-radius:15%;
-    border-radius:15%;
     border:1px solid #7278af;
-
 }
+
 .text-style{
     font-size: 20px;
     color:white;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
 }
 
 #footer{
     background:#c9cfd8;
-    padding: 30px 0 30px 0;
+    padding: 20px 0 20px 0;
 }
 
 .copyright {
     font: 15px 'Montserrat', sans-serif;
     color:#3f4349;
     text-align:center;
-
+}
+.copyright a{
+    text-decoration: none;
 }
 
 #footer-icon2{
