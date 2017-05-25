@@ -40,4 +40,4 @@ var server = http.createServer(function (req, res) {
 
 // Start it up
 server.listen(4322);
-console.log('Server running');
+console.log('Server running at 4322');
