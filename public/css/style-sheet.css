@@ -962,13 +962,15 @@ h1_form{
 /* About page */
 #about-title{
     width: 80%;
-    height: 10px;
+    height: 20px;
     background-color: transparent;
     position: absolute;
     overflow: hidden;
     padding: 5%;
-    margin-top: 0%;
+    margin-top: -3%;
     margin-left: 0%;
+    font-family:"Times New Roman", Georgia,SANS-SERIF;
+    font-size:20px;
 
 }
 
@@ -1027,3 +1029,46 @@ h1_form{
     margin-left: 150%;
 
 }
+.style_image{
+    width:128px;
+    height:128px;
+    border-radius: 50%;
+    display: block;
+     margin: auto; 
+     margin-top: 10%;
+}
+.footer-icon3{
+    width:40px;
+    height:40px;
+    margin-left:0%;
+}
+
+.footer-icon4{
+    width:40px;
+    height:40px;
+    margin-left:-2%;
+}
+.footer-icon5{
+    width:40px;
+    height:40px;
+    margin-left:2%;
+}
+.container2 {
+    position:absolute;
+    z-index: 1;
+    width:300px;
+    height:500px;
+    background-color:#aaff80;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+
+}
+@-webkit-keyframes mymove {
+    from {background-color:#aaff80;}
+    to {background-color:#99ccff;}
+}
+.about_txt{
+         font-size:17px;
+        font-weight: bold;
+}
+
