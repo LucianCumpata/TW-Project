@@ -947,16 +947,17 @@ h1_form{
 
 #questionnaire_list{
     font-family: Roboto;
-    margin-top: 10%;
-    margin-left: 25%;
-    font-size: medium;
+    margin-top: 5%;
+    margin-left: 15%;
+    font-size: 20px;
     border: 2px solid cornflowerblue;
     padding: 4%;
 
 }
 
 .questionnaire_list_items{
-    padding-right: 100px;
+    padding-right:100px;
+    padding-left:100px;
 }
 
 /* About page */
@@ -1070,5 +1071,12 @@ h1_form{
 .about_txt{
          font-size:17px;
         font-weight: bold;
+}
+#first-section_for_questionnaire{
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 13% 0;
+    text-align: center;
+    position: relative;
 }
 
