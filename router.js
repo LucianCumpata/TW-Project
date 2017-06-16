@@ -40,11 +40,11 @@ exports.route = function(req) {
 exports.missing = function(req) {
   // Try to read the file locally, this is a security hole, yo /../../etc/passwd
   var url = parser.parse(req.url, true);
-  var path = __dirname + "/public" + url.pathname
+  var path = __dirname + "/public" + decodeURI(url.pathname);
 
   console.log(req.method, url.pathname);
 
-  try {    
+  try {
     data = fs.readFileSync(path);
     //mime = req.headers.accepts || 'text/html'
     mime = mimeType(path);
@@ -57,9 +57,18 @@ exports.missing = function(req) {
     });        
   } catch (e) { 
     return handlerFactory.createHandler(function(req, res) {
-      res.writeHead(404, {'Content-Type': 'text/plain'});
-      res.write("No route registered for " + url.pathname);
+       // hardcoded response
+      res.writeHead(404, {'Content-Type': 'application/json'});
+      res.write(
+        JSON.stringify({
+          "response": "No route registered for " + url.pathname + " ...",
+          "code": 404
+        }, null, 2)
+      );
       res.end();
+      //or
+      //res.writeHead(404, {'Content-Type': 'text/plain'});
+      //utils.redirect(req, res, '404.html')
     });      
   }  
 }

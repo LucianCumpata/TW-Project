@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var questionnairesSchema=new Schema({
+
+var questionnairesSchema = new Schema({
 	Title:{
 		type:String,
 		require:true

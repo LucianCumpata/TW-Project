@@ -1,7 +1,10 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+
+//email regex from: https://stackoverflow.com/questions/18022365/mongoose-validate-email-syntax
+
 /*user model structure*/
-var userSchema=newSchema({
+var userSchema = new Schema({
 	user_name:{
 		type:String,
 		require:true

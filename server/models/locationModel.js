@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var locationSchema=new Schema({
+
+var locationSchema = new Schema({
    country:{
    	type:String,
    	require:true
