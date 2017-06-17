@@ -23,51 +23,58 @@
 <div class="title_description">
 <form action=" ">
     <br>
-    <h3>Title:</h3>
-    <input id="q_title" type="text" name="title1" value="Title">
+    <h3 required>Title:</h3>
+    <input id="q_title" type="text" name="title1" placeholder="Title">
     <br>
-    <h3>Description:</h3>
-    <textarea rows="3" cols="10"></textarea>
+    <h3 required>Description:</h3>
+    <textarea rows="3" cols="70"></textarea>
     <br>
     <h3>Tags:</h3>
-    <input id="q_tags" type="text" name="tags" value="Insert tags here">
+    <input id="q_tags" type="text" name="tags" placeholder="Insert tags here">
     <br><br>
-    <button class="q_button plus" type="button"> </button>
-    <button class="q_button questionmrk" type="button"> </button>
-    <button class="q_button questionrbtn" type="button"> </button>
-    <button class="q_button numbersrbtn" type="button"> </button>
-    <button class="q_button questioncbtn" type="button"> </button>
+    <button onclick="toggleQuestions()" class="q_button plus" type="button"> </button>
+    <button onclick="addMarkQuestion()" class="q_button questionmrk" type="button"> </button>
+    <button onclick="addRbtnQuestion()" class="q_button questionrbtn" type="button"> </button>
+    <button onclick="addRangeQuestion()" class="q_button numbersrbtn" type="button"> </button>
+    <button onclick="addCbtnQuestion()" class="q_button questioncbtn" type="button"> </button>
 </form>
 </div>
 
 <div id="adding_questions">
-    <img src="images/question%20mark.png"> <br>
-    <input class="q_question simple" type="text" name="simplequestion" value="Question"> <br>
-    <br>
-    <img src="images/question%20rbuttons.png"> <br>
-    <input class="q_question radio" type="text" name="radioquestion" value="Question"> <br>
-    <br>
-    <input class="q_question radio" type="text" name="answer1" value="Answer 1"> <br>
-    <input class="q_question radio" type="text" name="answer2" value="Answer 2"> <br>
-    <input class="q_question radio" type="text" name="answer3" value="Answer 3"> <br>
-    <input type="submit" value="Add"> <br>
-    <br>
-    <img src="images/question%20cbuttons.png"> <br>
-    <input class="q_question checkbox" type="text" name="checkboxquestion" value="Question"><br>
-    <br>
-    <input class="q_question checkbox" type="text" name="answer1" value="Answer 1"> <br>
-    <input class="q_question checkbox" type="text" name="answer2" value="Answer 2"> <br>
-    <input class="q_question checkbox" type="text" name="answer3" value="Answer 3"> <br>
-    <input type="submit" value="Add"> <br>
-    <br>
-    <img src="images/numbers%20rbuttons.png"> <br>
-    <input class="q_question numbers" type="text" name="numbersquestion" value="Question"><br>
-    <br>
-    <input class="q_question rbuttons" type="text" name="range" value="Rating range"> <br>
-    <input class="q_question rbuttons" type="text" name="item1" value="Item 1"> <br>
-    <input class="q_question rbuttons" type="text" name="item2" value="Item 2"> <br>
-    <input class="q_question rbuttons" type="text" name="item3" value="Item 3"> <br>
-    <input type="submit" value="Add">
+    <!-- <div class="q_question_block">
+        <span> 1 / 4 </span>
+        <img src="images/question%20mark.png">
+        <input class="q_question simple" type="text" name="simplequestion" placeholder="Question">
+        <input class="q_question_remove" onclick="removeQuestion(this)" type="submit" value="X">
+    </div> -->
+    <!-- <div class="q_question_block">
+        <span> 2 / 4 </span>
+        <img src="images/question%20rbuttons.png">
+        <input class="q_question radio" type="text" name="radioquestion" placeholder="Question">
+        <input class="q_question radio" type="text" name="answer1" placeholder="Answer">
+        <input class="q_question radio" type="text" name="answer2" placeholder="Answer">
+        <input class="q_question_add" onclick="addQuestionResponse(this)" type="submit" value="Add">
+        <input class="q_question_remove" onclick="removeQuestion(this)" type="submit" value="X">
+    </div> -->
+    <!-- <div class="q_question_block">
+        <span> 3 / 4 </span>
+        <img src="images/question%20cbuttons.png">
+        <input class="q_question checkbox" type="text" name="checkboxquestion" placeholder="Question">
+        <input class="q_question checkbox" type="text" name="answer1" placeholder="Answer">
+        <input class="q_question checkbox" type="text" name="answer2" placeholder="Answer">
+        <input class="q_question_add" onclick="addQuestionResponse(this)" type="submit" value="Add">
+        <input class="q_question_remove" onclick="removeQuestion(this)" type="submit" value="X">
+    </div> -->
+    <!-- <div class="q_question_block">
+        <span> 4 / 4 </span>
+        <img src="images/numbers%20rbuttons.png">
+        <input class="q_question numbers" type="text" name="numbersquestion" placeholder="Question">
+        <input class="q_question rbuttons" type="text" name="range" placeholder="Rating range">
+        <input class="q_question rbuttons" type="text" name="item1" placeholder="Item">
+        <input class="q_question rbuttons" type="text" name="item2" placeholder="Item">
+        <input class="q_question_add" onclick="addQuestionResponse(this)" type="submit" value="Add">
+        <input class="q_question_remove" onclick="removeQuestion(this)" type="submit" value="X">
+    </div> -->
 </div>
 
 <div id="finish">
@@ -81,5 +88,259 @@
     <p class="copyright"> ©Copyright CodingCatz 2017 <br><a href="license.html">License terms</a>
     </p>
 </footer>
+
+<script>
+    var questionCount = 0;
+
+    function toggleQuestions(){
+        var mark = document.querySelector(".questionmrk");
+        var rbtn = document.querySelector(".questionrbtn");
+        var range = document.querySelector(".numbersrbtn");
+        var cbtn = document.querySelector(".questioncbtn");
+
+        console.log(mark.style.display);
+
+        if(mark.style.display === "none" || mark.style.display === ""){
+            mark.style.display = rbtn.style.display = range.style.display = cbtn.style.display = "inline";
+        } else {
+            mark.style.display = rbtn.style.display = range.style.display = cbtn.style.display = "none";
+        }
+    }
+    //<input class="q_question rbuttons" type="text" placeholder="Item 3">
+    function addQuestionResponse(element){
+        var parent = element.parentNode;
+
+        var input = document.createElement("input");
+        input.classList.add("q_question", "rbuttons");
+        input.type = "text";
+        input.placeholder = "Answer";
+        
+        parent.insertBefore(input, element);
+    }
+
+    function removeQuestion(element){
+        var parent = element.parentNode;
+        parent.parentNode.removeChild(parent);
+    }
+
+    /*
+    <div class="q_question_block">
+        <span> 1 / 4 </span>
+        <img src="images/question%20mark.png">
+        <input class="q_question simple" type="text" name="simplequestion" placeholder="Question">
+        <input class="q_question_remove" onclick="removeQuestion(this)" type="submit" value="X">
+    </div>
+     */
+    function addMarkQuestion(){
+        questionCount += 1;
+
+        var div = document.createElement("div");
+        div.classList.add('q_question_block');
+
+        var span = document.createElement("span");
+        var t = document.createTextNode(questionCount + ".");
+        span.appendChild(t);
+        div.appendChild(span);
+
+        var img = document.createElement("img");
+        img.src = "images/question%20mark.png";
+        div.appendChild(img);
+
+        var input = document.createElement("input");
+        input.classList.add("q_question", "simple");
+        input.type = "text";
+        //input.name = "simplequestion";
+        input.placeholder = "Question";
+        div.appendChild(input);
+
+        var input = document.createElement("input");
+        input.classList.add("q_question_remove");
+        input.onclick = function() {removeQuestion(input)};
+        input.type = "submit";
+        input.value = "X";
+        div.appendChild(input);
+
+        document.querySelector("#adding_questions").appendChild(div);
+    }
+
+    /*
+    <div class="q_question_block">
+        <span> 2 / 4 </span>
+        <img src="images/question%20rbuttons.png">
+        <input class="q_question radio" type="text" name="radioquestion" placeholder="Question">
+        <input class="q_question radio" type="text" name="answer1" placeholder="Answer">
+        <input class="q_question radio" type="text" name="answer2" placeholder="Answer">
+        <input class="q_question_add" onclick="addQuestionResponse(this)" type="submit" value="Add">
+        <input class="q_question_remove" onclick="removeQuestion(this)" type="submit" value="X">
+    </div>
+     */
+    function addRbtnQuestion(){
+        questionCount += 1;
+
+        var div = document.createElement("div");
+        div.classList.add('q_question_block');
+
+        var span = document.createElement("span");
+        var t = document.createTextNode(questionCount + ".");
+        span.appendChild(t);
+        div.appendChild(span);
+
+        var img = document.createElement("img");
+        img.src = "images/question%20rbuttons.png";
+        div.appendChild(img);
+
+        var input = document.createElement("input");
+        input.classList.add("q_question", "radio");
+        input.type = "text";
+        //input.name = "radioquestion";
+        input.placeholder = "Question";
+        div.appendChild(input);
+
+        for(var i = 0; i < 2; i++){
+            var input = document.createElement("input");
+            input.classList.add("q_question", "radio");
+            input.type = "text";
+            //input.name = "answer1";
+            input.placeholder = "Answer";
+            div.appendChild(input);
+        }
+
+        var input = document.createElement("input");
+        input.classList.add("q_question_add");
+        input.onclick = function() {addQuestionResponse(input)}; //BUG
+        input.type = "submit";
+        input.value = "Add";
+        div.appendChild(input);
+
+        var input = document.createElement("input");
+        input.classList.add("q_question_remove");
+        input.onclick = function() {removeQuestion(input)};
+        input.type = "submit";
+        input.value = "X";
+        div.appendChild(input);
+
+        document.querySelector("#adding_questions").appendChild(div);
+    }
+
+    /*
+    <div class="q_question_block">
+        <span> 3 / 4 </span>
+        <img src="images/question%20cbuttons.png">
+        <input class="q_question checkbox" type="text" name="checkboxquestion" placeholder="Question">
+        <input class="q_question checkbox" type="text" name="answer1" placeholder="Answer">
+        <input class="q_question checkbox" type="text" name="answer2" placeholder="Answer">
+        <input class="q_question_add" onclick="addQuestionResponse(this)" type="submit" value="Add">
+        <input class="q_question_remove" onclick="removeQuestion(this)" type="submit" value="X">
+    </div>
+     */
+    function addRangeQuestion(){
+        questionCount += 1;
+
+        var div = document.createElement("div");
+        div.classList.add('q_question_block');
+
+        var span = document.createElement("span");
+        var t = document.createTextNode(questionCount + ".");
+        span.appendChild(t);
+        div.appendChild(span);
+
+        var img = document.createElement("img");
+        img.src = "images/question%20cbuttons.png";
+        div.appendChild(img);
+
+        var input = document.createElement("input");
+        input.classList.add("q_question", "checkbox");
+        input.type = "text";
+        //input.name = "checkboxquestion";
+        input.placeholder = "Question";
+        div.appendChild(input);
+
+        for(var i = 0; i < 2; i++){
+            var input = document.createElement("input");
+            input.classList.add("q_question", "checkbox");
+            input.type = "text";
+            //input.name = "answer1";
+            input.placeholder = "Answer";
+            div.appendChild(input);
+        }
+
+        var input = document.createElement("input");
+        input.classList.add("q_question_add");
+        input.onclick = function() {addQuestionResponse(input)}; //BUG
+        input.type = "submit";
+        input.value = "Add";
+        div.appendChild(input);
+
+        var input = document.createElement("input");
+        input.classList.add("q_question_remove");
+        input.onclick = function() {removeQuestion(input)};
+        input.type = "submit";
+        input.value = "X";
+        div.appendChild(input);
+
+        document.querySelector("#adding_questions").appendChild(div);
+    }
+
+    /*
+    <div class="q_question_block">
+        <span> 4 / 4 </span>
+        <img src="images/numbers%20rbuttons.png">
+        <input class="q_question numbers" type="text" name="numbersquestion" placeholder="Question">
+        <input class="q_question rbuttons" type="text" name="range" placeholder="Rating range">
+        <input class="q_question rbuttons" type="text" name="item1" placeholder="Item">s
+        <input class="q_question rbuttons" type="text" name="item2" placeholder="Item">
+        <input class="q_question_add" onclick="addQuestionResponse(this)" type="submit" value="Add">
+        <input class="q_question_remove" onclick="removeQuestion(this)" type="submit" value="X">
+    </div>
+     */
+    function addCbtnQuestion(){
+        questionCount += 1;
+
+        var div = document.createElement("div");
+        div.classList.add('q_question_block');
+
+        var span = document.createElement("span");
+        var t = document.createTextNode(questionCount + ".");
+        span.appendChild(t);
+        div.appendChild(span);
+
+        var img = document.createElement("img");
+        img.src = "images/question%20rbuttons.png";
+        div.appendChild(img);
+
+        var input = document.createElement("input");
+        input.classList.add("q_question", "numbers");
+        input.type = "text";
+        //input.name = "numbersquestion";
+        input.placeholder = "Question";
+        div.appendChild(input);
+
+        for(var i = 0; i < 2; i++){
+            var input = document.createElement("input");
+            input.classList.add("q_question", "rbuttons");
+            input.type = "text";
+            //input.name = "answer1";
+            input.placeholder = "Answer";
+            div.appendChild(input);
+        }
+
+        var input = document.createElement("input");
+        input.classList.add("q_question_add");
+        input.onclick = function() {addQuestionResponse(input)}; //BUG
+        input.type = "submit";
+        input.value = "Add";
+        div.appendChild(input);
+
+        var input = document.createElement("input");
+        input.classList.add("q_question_remove");
+        input.onclick = function() {removeQuestion(input)};
+        input.type = "submit";
+        input.value = "X";
+        div.appendChild(input);
+
+        document.querySelector("#adding_questions").appendChild(div);
+    }
+
+</script>
 </body>
 </html>

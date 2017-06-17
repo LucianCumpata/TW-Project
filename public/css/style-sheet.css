@@ -823,6 +823,10 @@ h1_form{
     background-image: url("../images/plus-sign.png");
 }
 
+.questionmrk, .questionrbtn, .numbersrbtn, .questioncbtn{
+    display: none;
+}
+
 .q_button.questionmrk{
     background-image: url("../images/question mark.png");
 }
@@ -849,14 +853,31 @@ h1_form{
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 110px;
-    background-color: transparent;
+    padding: 10px;
+    background-color: rgba(43, 43, 43, 0.1);
+}
 
+.q_question_block{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.q_question_block img, .q_question_block input{
+    display: block;
 }
 
 .q_question{
     width: 300px;
     height: 30px;
     font-size: medium;
+}
+
+.q_question_block .q_question_add{
+    display: inline-block;
+}
+
+.q_question_block .q_question_remove{
+    display: inline-block;
 }
 
 .q_question.simple{
